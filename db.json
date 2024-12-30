@@ -1,0 +1,204 @@
+{
+  "videos": [
+    {
+      "id": "rfscVS0vtbw",
+      "videoUrl": "https://www.youtube.com/embed/rfscVS0vtbw",
+      "title": "Python Programming Tutorial - Full Course for Beginners",
+      "channelName": "FreeCodeCamp",
+      "channelLogo": "/User.png",
+      "views": "5.2M",
+      "publishedDate": "1 year ago",
+      "tags": ["Python", "Programming", "Coding"]
+    },
+    {
+      "id": "w7ejDZ8SWv8",
+      "videoUrl": "https://www.youtube.com/embed/w7ejDZ8SWv8",
+      "title": "React JS Crash Course 2021",
+      "channelName": "Traversy Media",
+      "channelLogo": "/User.png",
+      "views": "3.8M",
+      "publishedDate": "2 years ago",
+      "tags": ["React", "Frontend", "Web Development"]
+    },
+    {
+      "id": "1PnVor36_40",
+      "videoUrl": "https://www.youtube.com/embed/1PnVor36_40",
+      "title": "Learn CSS in 20 Minutes",
+      "channelName": "Kevin Powell",
+      "channelLogo": "/User.png",
+      "views": "2.7M",
+      "publishedDate": "6 months ago",
+      "tags": ["CSS", "Web Design", "Frontend"]
+    },
+    {
+      "id": "HXV3zeQKqGY",
+      "videoUrl": "https://www.youtube.com/embed/HXV3zeQKqGY",
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channelName": "Programming with Mosh",
+      "channelLogo": "/User.png",
+      "views": "4.3M",
+      "publishedDate": "3 years ago",
+      "tags": ["SQL", "Databases", "Backend"]
+    },
+    {
+      "id": "fqMOX6JJhGo",
+      "videoUrl": "https://www.youtube.com/embed/fqMOX6JJhGo",
+      "title": "Docker Tutorial for Beginners",
+      "channelName": "TechWorld with Nana",
+      "channelLogo": "/User.png",
+      "views": "1.2M",
+      "publishedDate": "1 year ago",
+      "tags": ["Docker", "DevOps", "Containers"]
+    },
+    {
+      "id": "s7wmiS2mSXY",
+      "videoUrl": "https://www.youtube.com/embed/s7wmiS2mSXY",
+      "title": "What is an API? - Application Programming Interface",
+      "channelName": "MuleSoft",
+      "channelLogo": "/User.png",
+      "views": "1.6M",
+      "publishedDate": "2 years ago",
+      "tags": ["APIs", "Backend", "Web Development"]
+    },
+    {
+      "id": "RBSGKlAvoiM",
+      "videoUrl": "https://www.youtube.com/embed/RBSGKlAvoiM",
+      "title": "Data Structures Easy to Advanced Course",
+      "channelName": "FreeCodeCamp",
+      "channelLogo": "/User.png",
+      "views": "3.9M",
+      "publishedDate": "1 year ago",
+      "tags": ["Data", "Programming", "Coding"]
+    },
+    {
+      "id": "NU_1StN5Tkk",
+      "videoUrl": "https://www.youtube.com/embed/NU_1StN5Tkk",
+      "title": "Design Patterns in Plain English",
+      "channelName": "Programming with Mosh",
+      "channelLogo": "/User.png",
+      "views": "1.5M",
+      "publishedDate": "2 years ago",
+      "tags": ["Design", "Programming", "Tips"]
+    },
+    {
+      "id": "vKsaO5IetS0",
+      "videoUrl": "https://www.youtube.com/embed/vKsaO5IetS0",
+      "title": "How to Learn Programming Faster",
+      "channelName": "Tech With Tim",
+      "channelLogo": "/User.png",
+      "views": "750K",
+      "publishedDate": "8 months ago",
+      "tags": ["Tips", "Programming", "Learning"]
+    },
+    {
+      "id": "hdI2bqOjy3c",
+      "videoUrl": "https://www.youtube.com/embed/hdI2bqOjy3c",
+      "title": "JavaScript Crash Course for Beginners",
+      "channelName": "Traversy Media",
+      "channelLogo": "/User.png",
+      "views": "2.9M",
+      "publishedDate": "3 years ago",
+      "tags": ["JavaScript", "Coding", "Web Development"]
+    },
+    {
+      "id": "WGJJIrtnfpk",
+      "videoUrl": "https://www.youtube.com/embed/WGJJIrtnfpk",
+      "title": "Python Full Course - Learn Python in 12 Hours",
+      "channelName": "Edureka",
+      "channelLogo": "/User.png",
+      "views": "4.8M",
+      "publishedDate": "2 years ago",
+      "tags": ["Python", "Programming", "Coding"]
+    },
+    {
+      "id": "Ke90Tje7VS0",
+      "videoUrl": "https://www.youtube.com/embed/Ke90Tje7VS0",
+      "title": "React Tutorial for Beginners",
+      "channelName": "Academind",
+      "channelLogo": "/User.png",
+      "views": "3.4M",
+      "publishedDate": "4 years ago",
+      "tags": ["React", "Frontend", "Development"]
+    },
+    {
+      "id": "yfoY53QXEnI",
+      "videoUrl": "https://www.youtube.com/embed/yfoY53QXEnI",
+      "title": "CSS Crash Course For Absolute Beginners",
+      "channelName": "Traversy Media",
+      "channelLogo": "/User.png",
+      "views": "3.1M",
+      "publishedDate": "5 years ago",
+      "tags": ["CSS", "Styling", "Web Development"]
+    },
+    {
+      "id": "7S_tz1z_5bA",
+      "videoUrl": "https://www.youtube.com/embed/7S_tz1z_5bA",
+      "title": "SQL Full Course - Learn SQL in 4 Hours",
+      "channelName": "Great Learning",
+      "channelLogo": "/User.png",
+      "views": "2.5M",
+      "publishedDate": "2 years ago",
+      "tags": ["SQL", "Databases", "Data"]
+    },
+    {
+      "id": "3c-iBn73dDE",
+      "videoUrl": "https://www.youtube.com/embed/3c-iBn73dDE",
+      "title": "Docker Tutorial for Beginners",
+      "channelName": "FreeCodeCamp",
+      "channelLogo": "/User.png",
+      "views": "1.3M",
+      "publishedDate": "2 years ago",
+      "tags": ["Docker", "DevOps", "Containers"]
+    },
+    {
+      "id": "ua-CiDNNj30",
+      "videoUrl": "https://www.youtube.com/embed/ua-CiDNNj30",
+      "title": "Data Science Full Course - Learn Data Science in 10 Hours",
+      "channelName": "Simplilearn",
+      "channelLogo": "/User.png",
+      "views": "3.7M",
+      "publishedDate": "3 years ago",
+      "tags": ["Data", "Data Science", "Python"]
+    },
+    {
+      "id": "c9Wg6Cb_YlU",
+      "videoUrl": "https://www.youtube.com/embed/c9Wg6Cb_YlU",
+      "title": "UI/UX Design Tutorial - Wireframe, Mockup & Design in Figma",
+      "channelName": "Flux Academy",
+      "channelLogo": "/User.png",
+      "views": "2.1M",
+      "publishedDate": "6 months ago",
+      "tags": ["Design", "UI/UX", "Web Design"]
+    },
+    {
+      "id": "8sXRyHI3bLw",
+      "videoUrl": "https://www.youtube.com/embed/8sXRyHI3bLw",
+      "title": "Web Development In 2024 - A Practical Guide",
+      "channelName": "The Net Ninja",
+      "channelLogo": "/User.png",
+      "views": "1.9M",
+      "publishedDate": "4 months ago",
+      "tags": ["Web Development", "Frontend", "Backend"]
+    },
+    {
+      "id": "NCwa_xi0Uuc",
+      "videoUrl": "https://www.youtube.com/embed/NCwa_xi0Uuc",
+      "title": "JavaScript ES6 Tutorial",
+      "channelName": "Academind",
+      "channelLogo": "/User.png",
+      "views": "1.7M",
+      "publishedDate": "3 years ago",
+      "tags": ["JavaScript", "Coding", "Programming"]
+    },
+    {
+      "id": "JeznW_7DlB0",
+      "videoUrl": "https://www.youtube.com/embed/JeznW_7DlB0",
+      "title": "Python Object-Oriented Programming (OOP) - Full Course",
+      "channelName": "Telusko",
+      "channelLogo": "/User.png",
+      "views": "2.8M",
+      "publishedDate": "5 years ago",
+      "tags": ["Python", "OOP", "Programming"]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+@layer utilities {
+  /* Custom scrollbar styles */
+  .scrollbar-hover::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollbar-hover::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  .scrollbar-hover::-webkit-scrollbar-thumb {
+    background-color: rgba(177, 177, 177, 0); /* Invisible by default */
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+
+  /* Hover effect: Scrollbar becomes visible */
+  .scrollbar-hover:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(177, 177, 177, 0.8); /* Light gray on hover */
+  }
+
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+}
