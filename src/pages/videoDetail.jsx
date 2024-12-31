@@ -12,7 +12,7 @@ const VideoDetail = () => {
   const searchQuery = useSelector(selectSearchQuery);
   const [filteredVideos, setFilteredVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
-  const [isSidebarActive, setIsSidebarActive] = useState(false);
+  const [isSidebarActive, setIsSidebarActive] = useState(true);
   console.log(isSidebarActive)
 
   useEffect(() => {
