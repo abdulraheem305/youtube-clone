@@ -49,7 +49,8 @@ const VideoDetail = () => {
               {selectedVideo ? (
                 <>
                   <iframe
-                    className="w-[1130px] h-[600px] rounded-md px-4 py-2 sm:mx-0"
+                    className="aspect-video w-full max-w-6xl rounded-md px-4 py-2 sm:mx-0"
+
                     src={selectedVideo.videoUrl}
                     title={selectedVideo.title}
                     frameBorder="0"
@@ -117,7 +118,8 @@ const VideoDetail = () => {
                         <iframe
                           src={video.videoUrl}
                           title={video.title}
-                          className="w-22 h-18 object-cover pointer-events-none rounded-md"
+                          className="w-24 h-20 sm:w-32 sm:h-28 md:w-48 md:h-36 object-cover pointer-events-none rounded-md"
+
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen

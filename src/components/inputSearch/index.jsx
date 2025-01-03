@@ -61,11 +61,11 @@ const InputSearch = ({ isVideoDetailPage }) => {
     <div className="group flex items-center my-1">
       <div className="flex h-8 md:h-10 md:ml-10 md:pl-5 border border-[#888888] rounded-l-3xl group-focus-within:border-blue-500 md:group-focus-within:ml-5 md:group-focus-within:pl-0">
         <div className="w-10 items-center justify-center hidden group-focus-within:md:flex">
-          <SearchIcon className="text-black dark:text-white text-xl" />
+          <SearchIcon className="text-black  text-xl" />
         </div>
         <input
           type="text"
-          className="bg-transparent outline-none text-black dark:text-white pr-5 pl-5 md:pl-0 w-44 md:group-focus-within:pl-0 md:w-64 lg:w-[500px] relative"
+          className="bg-transparent outline-none text-black  pr-5 pl-5 md:pl-0 w-44 md:group-focus-within:pl-0 md:w-64 lg:w-[500px] relative"
           placeholder="Search"
           onChange={handleSearchInput}
           value={searchQuery}
@@ -85,7 +85,7 @@ const InputSearch = ({ isVideoDetailPage }) => {
         className="w-[40px] md:w-[60px] h-8 md:h-10 flex items-center justify-center border border-l-0 border-[#888888] rounded-r-3xl bg-white/[0.1] dark:bg-black/[0.1]"
         onClick={() => handleUpdateSearch(searchQuery)}
       >
-        <SearchIcon className="text-black dark:text-white text-xl" />
+        <SearchIcon className="text-black  text-xl" />
       </button>
       {!isVideoDetailPage && (
         <button
