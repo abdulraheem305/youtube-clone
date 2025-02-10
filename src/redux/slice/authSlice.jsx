@@ -1,11 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { auth } from "../../firebase";
+import { auth, googleProvider } from "../../firebase";
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut,
+  signInWithPopup,
 } from "firebase/auth";
 
+// Login action
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async ({ email, password }, { rejectWithValue }) => {
@@ -22,6 +24,7 @@ export const loginUser = createAsyncThunk(
   }
 );
 
+// Signup action
 export const signupUser = createAsyncThunk(
   "auth/signupUser",
   async ({ email, password }, { rejectWithValue }) => {
@@ -38,6 +41,20 @@ export const signupUser = createAsyncThunk(
   }
 );
 
+// Google signup action
+export const googleSignupUser = createAsyncThunk(
+  "auth/googleSignupUser",
+  async (_, { rejectWithValue }) => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      return result.user; // Return Google user data for further processing
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
+// Logout action
 export const logoutUser = createAsyncThunk("auth/logoutUser", async () => {
   await signOut(auth);
 });
@@ -65,6 +82,9 @@ const authSlice = createSlice({
         state.error = action.payload;
       })
       .addCase(signupUser.fulfilled, (state, action) => {
+        state.user = action.payload;
+      })
+      .addCase(googleSignupUser.fulfilled, (state, action) => {
         state.user = action.payload;
       })
       .addCase(logoutUser.fulfilled, (state) => {

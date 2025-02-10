@@ -19,6 +19,8 @@ import {
   FeedbackIcon,
 } from "../../constants";
 
+import Loader from "../../components/loader/index";
+
 const menuItems = [
   { icon: GoogleIcon, label: "Google Account", dividerAfter: false },
   { icon: SwitchAccountIcon, label: "Switch account", dividerAfter: false },
@@ -46,17 +48,24 @@ const menuItems = [
 
 const UserAvatarModal = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const handleSignOut = async () => {
-    try {
-      await signOut(auth);
-      navigate("/");
-    } catch (error) {
-      console.error("Error signing out: ", error.message);
-    }
+    setIsOpen(false);
+    setLoading(true);
+    setTimeout(async () => {
+      try {
+        await signOut(auth);
+        navigate("/");
+      } catch (error) {
+        console.error("Error signing out: ", error.message);
+      } finally {
+        setLoading(false);
+      }
+    }, 3000);
   };
 
   useEffect(() => {
@@ -125,6 +134,8 @@ const UserAvatarModal = () => {
           </div>
         </>
       )}
+
+      {loading && <Loader />}
     </div>
   );
 };
