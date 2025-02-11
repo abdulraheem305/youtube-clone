@@ -5,7 +5,7 @@ export const fetchVideos = createAsyncThunk(
   "videos/fetchVideos",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await fetch("http://localhost:5000/videos");
+      const response = await fetch("https://67ab54f75853dfff53d7023c.mockapi.io/videos");
 
       if (!response.ok) {
         const errorData = await response.json();
