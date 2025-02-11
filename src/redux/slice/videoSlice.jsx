@@ -1,4 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSelector } from "reselect";
+
 export const fetchVideos = createAsyncThunk(
   "videos/fetchVideos",
   async (_, { rejectWithValue }) => {
@@ -54,23 +56,24 @@ const videoSlice = createSlice({
   },
 });
 
-export const selectVideos = (state) => {
-  const query = state.videos.searchQuery;
-  const activeCategory = state.videos.activeCategory;
+const selectVideoState = (state) => state.videos;
 
-  return state.videos.videos.filter((video) => {
+export const selectVideos = createSelector([selectVideoState], (videoState) => {
+  const { videos, searchQuery, activeCategory } = videoState;
+
+  return videos.filter((video) => {
     const matchesQuery =
-      !query ||
-      video.title.toLowerCase().includes(query) ||
-      video.channelName.toLowerCase().includes(query) ||
-      video.tags.some((tag) => tag.toLowerCase().includes(query));
+      !searchQuery ||
+      video.title.toLowerCase().includes(searchQuery) ||
+      video.channelName.toLowerCase().includes(searchQuery) ||
+      video.tags.some((tag) => tag.toLowerCase().includes(searchQuery));
 
     const matchesCategory =
       activeCategory === "All" || video.tags.includes(activeCategory);
 
     return matchesQuery && matchesCategory;
   });
-};
+});
 
 export const selectActiveCategory = (state) => state.videos.activeCategory;
 export const selectSearchQuery = (state) => state.videos.searchQuery;

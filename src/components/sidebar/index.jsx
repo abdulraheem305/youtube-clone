@@ -28,7 +28,6 @@ import {
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Sidebar = ({ isSidebarOpen }) => {
-  console.log(isSidebarOpen)
   const [activeItem, setActiveItem] = useState("home");
   const isOpen = isSidebarOpen;
   const navigate = useNavigate();
@@ -138,7 +137,7 @@ const Sidebar = ({ isSidebarOpen }) => {
 
   return (
     <div className="w-64 bg-white flex flex-col fixed top-16 left-0 right-0 bottom-0">
-  <nav className="flex-1 overflow-y-auto scrollbar-thin">
+      <nav className="flex-1 overflow-y-auto scrollbar-thin">
         {menuSections.map((section, index) => (
           <div key={index}>
             {section.title && (
@@ -163,13 +162,11 @@ const Sidebar = ({ isSidebarOpen }) => {
             )}
           </div>
         ))}
-         <hr className="my-2 border-gray" />
+        <hr className="my-2 border-gray" />
         <footer className="px-4 py-4 text-gray-600 text-sm">
-        <p>© 2024 Google LLC</p>
-      </footer>
-
+          <p>© 2024 Google LLC</p>
+        </footer>
       </nav>
-      
     </div>
   );
 };

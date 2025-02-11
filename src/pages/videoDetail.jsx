@@ -13,7 +13,6 @@ const VideoDetail = () => {
   const [filteredVideos, setFilteredVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isSidebarActive, setIsSidebarActive] = useState(true);
-  console.log(isSidebarActive)
 
   useEffect(() => {
     const filtered = videos.filter((video) =>
@@ -32,7 +31,7 @@ const VideoDetail = () => {
     }
   }, [searchQuery, id, videos]);
 
-  const toggleSidebar = () => setIsSidebarActive((prev) => !prev); 
+  const toggleSidebar = () => setIsSidebarActive((prev) => !prev);
 
   return (
     <div className="flex flex-col h-screen">
@@ -50,7 +49,6 @@ const VideoDetail = () => {
                 <>
                   <iframe
                     className="aspect-video w-full max-w-6xl rounded-md px-4 py-2 sm:mx-0"
-
                     src={selectedVideo.videoUrl}
                     title={selectedVideo.title}
                     frameBorder="0"
@@ -119,7 +117,6 @@ const VideoDetail = () => {
                           src={video.videoUrl}
                           title={video.title}
                           className="w-24 h-20 sm:w-32 sm:h-28 md:w-48 md:h-36 object-cover pointer-events-none rounded-md"
-
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen

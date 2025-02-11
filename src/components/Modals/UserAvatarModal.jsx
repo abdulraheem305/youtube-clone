@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { auth } from "../../firebase";
+
 import {
   GoogleIcon,
   SwitchAccountIcon,
@@ -14,6 +18,8 @@ import {
   HelpsIcon,
   FeedbackIcon,
 } from "../../constants";
+
+import Loader from "../../components/loader/index";
 
 const menuItems = [
   { icon: GoogleIcon, label: "Google Account", dividerAfter: false },
@@ -42,8 +48,25 @@ const menuItems = [
 
 const UserAvatarModal = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const handleSignOut = async () => {
+    setIsOpen(false);
+    setLoading(true);
+    setTimeout(async () => {
+      try {
+        await signOut(auth);
+        navigate("/");
+      } catch (error) {
+        console.error("Error signing out: ", error.message);
+      } finally {
+        setLoading(false);
+      }
+    }, 3000);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -95,7 +118,12 @@ const UserAvatarModal = () => {
             <ul className="py-1 text-gray-700">
               {menuItems.map((item, index) => (
                 <React.Fragment key={index}>
-                  <li className="flex items-center px-3 py-1 hover:bg-lightGray cursor-pointer space-x-4 whitespace-nowrap text-sm">
+                  <li
+                    className="flex items-center px-3 py-1 hover:bg-lightGray cursor-pointer space-x-4 whitespace-nowrap text-sm"
+                    onClick={
+                      item.label === "Sign out" ? handleSignOut : undefined
+                    }
+                  >
                     <item.icon className="text-gray-600" />
                     <span>{item.label}</span>
                   </li>
@@ -106,6 +134,8 @@ const UserAvatarModal = () => {
           </div>
         </>
       )}
+
+      {loading && <Loader />}
     </div>
   );
 };
